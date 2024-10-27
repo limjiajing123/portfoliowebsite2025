@@ -1,9 +1,8 @@
 export const Bio = {
   name: "Lim Jia Jing",
   roles: [
-    "Full Stack Developer",
+    "Developer",
     "Robotic Software Engineer",
-    "UI/UX Designer",
     "Programmer",
     "Automation Engineer",
   ],
@@ -203,6 +202,52 @@ export const skills = [
 
 export const experiences = [
   {
+    id: 1,
+    img: "https://media.licdn.com/dms/image/v2/D4E0BAQHjkUYrDIUKYA/company-logo_200_200/company-logo_200_200/0/1719839886088/cognizant_logo?e=1738195200&v=beta&t=NrB9hpXe_8nKdcp6A7n5Ce7KPzNsGFg9kXfyNu2sxeA",
+    role: "Automation Software Engineer (Graduate Analsyt) (Banking Financial Services Division Payment Team)",
+    company: "Cognizant Tech Solutions",
+    date: "June 2024 - Present",
+    desc: ` Developed and executed automated test scripts using Tosca for a range of critical banking and financial applications, ensuring robust software quality and functionality. 
+            Collaborated with cross-functional teams to identify, document, and resolve defects, using Jira as the primary tool for defect tracking and management. 
+            Conducted test planning, test case design, and test execution to ensure adherence to project timelines and high-quality deliverables. 
+            Contributed to continuous integration and delivery processes by supporting automation efforts, optimizing testing procedures, and reducing manual testing efforts. 
+            Participated in daily stand-up meetings, contributing to discussions on test progress, defect status, and quality improvements. `,
+    skills: [
+      "Tosca",
+      "Jira",
+      "Confluence",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    img2: "cognizant_event_grp_photos.jpeg",
+  },
+  {
+    id: 0,
+    img: "https://media.licdn.com/dms/image/v2/C560BAQGKkcuFYamwIg/company-logo_200_200/company-logo_200_200/0/1668666373728/rris_logo?e=1738195200&v=beta&t=8eu94sTIXFDEoPCYdAGDKGqAl0rJ-rbHLdDaH0Vl99Y",
+    role: "Undergraduate Student Researcher",
+    company: "Rehabilitation Research Institute of Singapore (RRIS)",
+    date: "July 2023 - May 2024",
+    desc: ` Project Title: Evaluating Navigation Among Crows Algorithm For Shared Control Of A Robotic Wheelchair (Grade: A)
+            Survey existing autonomous navigation among crowd algorithms.
+            Integration of an existing algorithm modified for shared control and evaluate its performance in simulator.
+            Created and modified GUI and visualization tool in Rviz to showcase the effects of the algorithm.
+            Make recommendations for the best algorithm to use for shared control amongst crowd.
+            Creation of a pipeline to test shared control amongst crowd algorithms in simulator. 
+            Proven that Navigation Among Crowd Algorithm considering dynamic obstacle is unnecessary.`,
+    skills: [
+      "ROS I/II",
+      "Docker",
+      "Python",
+      "C++",
+      "Github",
+      "Windows",
+      "Linux",
+    ],
+    doc: "https://drive.google.com/file/d/1ugUs_DtNrEL2ZHRBMkiMN1ZMMm6mPVQe/view?usp=sharing",
+    img2: "simulation_walkway_with_obstacle.gif",
+  },
+  {
     id: 0,
     img: "https://media.licdn.com/dms/image/v2/C4D0BAQEm55jFujHL5A/company-logo_200_200/company-logo_200_200/0/1631344936503?e=1738195200&v=beta&t=g-ivKtmVCFQiIFe9uRXmdkmlPttL8xBtPZjoegakVYM",
     role: "Robotic Software Engineering Intern",
@@ -233,52 +278,6 @@ export const experiences = [
     ],
     doc: "https://drive.google.com/file/d/1ugUs_DtNrEL2ZHRBMkiMN1ZMMm6mPVQe/view?usp=sharing",
     img2: "Interns.jpeg",
-  },
-  {
-    id: 0,
-    img: "https://media.licdn.com/dms/image/v2/C560BAQGKkcuFYamwIg/company-logo_200_200/company-logo_200_200/0/1668666373728/rris_logo?e=1738195200&v=beta&t=8eu94sTIXFDEoPCYdAGDKGqAl0rJ-rbHLdDaH0Vl99Y",
-    role: "Undergraduate Student Researcher",
-    company: "Rehabilitation Research Institute of Singapore (RRIS)",
-    date: "July 2023 - May 2024",
-    desc: ` Project Title: Evaluating Navigation Among Crows Algorithm For Shared Control Of A Robotic Wheelchair (Grade: A)
-            Survey existing autonomous navigation among crowd algorithms.
-            Integration of an existing algorithm modified for shared control and evaluate its performance in simulator.
-            Created and modified GUI and visualization tool in Rviz to showcase the effects of the algorithm.
-            Make recommendations for the best algorithm to use for shared control amongst crowd.
-            Creation of a pipeline to test shared control amongst crowd algorithms in simulator. 
-            Proven that Navigation Among Crowd Algorithm considering dynamic obstacle is unnecessary.`,
-    skills: [
-      "ROS I/II",
-      "Docker",
-      "Python",
-      "C++",
-      "Github",
-      "Windows",
-      "Linux",
-    ],
-    doc: "https://drive.google.com/file/d/1ugUs_DtNrEL2ZHRBMkiMN1ZMMm6mPVQe/view?usp=sharing",
-    img2: "simulation_walkway_with_obstacle.gif",
-  },
-  {
-    id: 1,
-    img: "https://media.licdn.com/dms/image/v2/D4E0BAQHjkUYrDIUKYA/company-logo_200_200/company-logo_200_200/0/1719839886088/cognizant_logo?e=1738195200&v=beta&t=NrB9hpXe_8nKdcp6A7n5Ce7KPzNsGFg9kXfyNu2sxeA",
-    role: "Automation Software Engineer (Graduate Analsyt) (Banking Financial Services Division Payment Team)",
-    company: "Cognizant Tech Solutions",
-    date: "June 2024 - Present",
-    desc: ` Developed and executed automated test scripts using Tosca for a range of critical banking and financial applications, ensuring robust software quality and functionality. 
-            Collaborated with cross-functional teams to identify, document, and resolve defects, using Jira as the primary tool for defect tracking and management. 
-            Conducted test planning, test case design, and test execution to ensure adherence to project timelines and high-quality deliverables. 
-            Contributed to continuous integration and delivery processes by supporting automation efforts, optimizing testing procedures, and reducing manual testing efforts. 
-            Participated in daily stand-up meetings, contributing to discussions on test progress, defect status, and quality improvements. `,
-    skills: [
-      "Tosca",
-      "Jira",
-      "Confluence",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    img2: "cognizant_event_grp_photos.jpeg",
   },
   // {
   //   id: 2,
