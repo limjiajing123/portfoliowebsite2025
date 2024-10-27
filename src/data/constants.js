@@ -168,9 +168,29 @@ export const skills = [
           "https://skillicons.dev/icons?i=golang",
       },
       {
+        name: "C++",
+        image:
+          "https://skillicons.dev/icons?i=cpp",
+      },
+      {
         name: "aws",
         image:
           "https://skillicons.dev/icons?i=aws",
+      },
+      {
+        name: "Java",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      },
+      {
+        name: ".NEt",
+        image:
+          "https://skillicons.dev/icons?i=dotnet",
+      },
+      {
+        name: "ROS I & II",
+        image:
+          "https://skillicons.dev/icons?i=ROS",
       },
       {
         name: "Wireshark",
@@ -212,7 +232,7 @@ export const experiences = [
       "Linux",
     ],
     doc: "https://drive.google.com/file/d/1ugUs_DtNrEL2ZHRBMkiMN1ZMMm6mPVQe/view?usp=sharing",
-    img2: "/Interns.jpeg",
+    img2: "Interns.jpeg",
   },
   {
     id: 0,
@@ -237,7 +257,7 @@ export const experiences = [
       "Linux",
     ],
     doc: "https://drive.google.com/file/d/1ugUs_DtNrEL2ZHRBMkiMN1ZMMm6mPVQe/view?usp=sharing",
-    img2: "/simulation_walkway_with_obstacle.gif",
+    img2: "simulation_walkway_with_obstacle.gif",
   },
   {
     id: 1,
@@ -258,7 +278,7 @@ export const experiences = [
       "CSS",
       "JavaScript",
     ],
-    img2: "/cognizant_event_grp_photos.jpeg",
+    img2: "cognizant_event_grp_photos.jpeg",
   },
   // {
   //   id: 2,
@@ -309,7 +329,7 @@ export const projects = [
     description:
       "Yes you are looking at it. This is my portfolio website. I have designed and developed this website to showcase my projects, experiences, and skills. I have used React Js for the front end and styled components for the styling. I have used framer-motion for the animations and react-icons for the icons. I have used the react-typewriter-effect for the typing effect. I have used the react-scroll for the smooth scrolling. I have used the react-modal for the modal. I have used the react-text-loop for the text loop. I have used the react-router-dom for the routing. I have used the react-syntax-highlighter for the syntax highlighting. I have used the styled-components for the styling. I have used the web-vitals for the performance metrics.",
     image:
-      "/PortfolioWebsite2024.gif",
+      "PortfolioWebsite2024.gif",
     tags: [
       "React Js",
       "HTML5",
@@ -335,7 +355,7 @@ export const projects = [
         Creation of a pipeline to test shared control amongst crowd algorithms in simulator and with real wheelchair. 
         Proven that Navigation Among Crowd Algorithm considering dynamic obstacle is unnecessary.`,
     image:
-      "/simulation_with_rds_gui.gif",
+      "simulation_with_rds_gui.gif",
     tags: ["ROS I", "C++", "Python", "Linux", "Windows"],
     // category: "web app",
     // github: "https://github.com/rishavchanda/Podstream",
@@ -352,7 +372,7 @@ export const projects = [
         Integrate obstacle scenarios created by the team to assess the arm's capability to navigate and retrieve objects efficiently.
         Implemented custom path trajectory planning using ROS MoveIt to enhance the robotic arm's efficiency in object retrieval by taking in consideration of spatial constraints minimising potential collisions during operation.`,
     image:
-      "/robot_arm_setup_2_motion.jpeg",
+      "robot_arm_setup_2_motion.jpeg",
     tags: [
       "ROS I",
       "C++", 
@@ -376,7 +396,7 @@ export const projects = [
         Designed and collaborated on an efficient wiring layout for seamless integration of sensors, actuators, and the VEX controller.
         Won 2nd in the competition for search and retrieval of tennis ball.`,
     image:
-      "/Final_vehicle.jpeg",
+      "Final_vehicle.jpeg",
     tags: ["C++", "SolidWorks", "Windows"],
     // category: "web",
     // github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
@@ -390,7 +410,7 @@ export const projects = [
       `Created the website out of interest after finding out I can have a website of my own by hosting thorugh github.
        Could have spent more time to make it more responsive, interactive and beautiful but oh wells study comes first.`,
     image:
-      "/oldportfoliowebsite.gif",
+      "oldportfoliowebsite.gif",
     tags: ["HTML", "CSS", "JavaScript", "Github"],
     // category: "android app",
     // github: "https://github.com/rishavchanda/Buckoid-Android-App",
