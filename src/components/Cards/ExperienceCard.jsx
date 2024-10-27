@@ -99,8 +99,10 @@ const Image2 = styled.img`
     background-color: #FFFFFF;
     border-radius: 80px;
     margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
+    @media only screen and (max-width: 768px) {
+        height: 200px; /* Adjusted height for better visibility */
+        border-radius: 20px; /* Smaller border-radius for mobile */
+        margin-top: 10px; /* Adjusted margin for better spacing */
     }
 `
 
