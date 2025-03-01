@@ -1,0 +1,14 @@
+{
+    "family": "backend-task",
+    "containerDefinitions": [
+      {
+        "name": "backend",
+        "image": "406535803017.dkr.ecr.ap-southeast-1.amazonaws.com/portfolio-backend:latest",
+        "memory": 512,
+        "cpu": 256,
+        "essential": true,
+        "portMappings": [{ "containerPort": 5000 }]
+      }
+    ]
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "family": "frontend-task",
+    "containerDefinitions": [
+      {
+        "name": "frontend",
+        "image": "406535803017.dkr.ecr.ap-southeast-1.amazonaws.com/portfolio-frontend:latest",
+        "memory": 512,
+        "cpu": 256,
+        "essential": true,
+        "portMappings": [{ "containerPort": 80 }]
+      }
+    ]
+  }
+  
