@@ -1,16 +1,21 @@
-version: "3.8"
+# This file is used to define the services that make up your application.
+version: "Latest"
 services:
   backend:
+    image: aws-backend:v1
     build:
       context: ./backend
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
+    env_file:
+      - ./backend/.env  # Load environment variables from the .env file
     environment:
       - PORT=5000
     restart: unless-stopped
 
   frontend:
+    image: aws-frontend:v4
     build:
       context: ./frontend
       dockerfile: Dockerfile
