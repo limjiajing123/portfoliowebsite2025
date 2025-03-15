@@ -8,7 +8,14 @@ const portfolioKnowledge = require('./portfolioKnowledge');
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+const corsOptions = {
+  origin: 'http://new-alb-141779744.ap-southeast-1.elb.amazonaws.com',  // ALB DNS
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+};
+
+app.use(cors(corsOptions));  // Apply CORS options
+// app.use(cors());
 app.use(express.json());
 
 // Debugging logs
