@@ -11,12 +11,22 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+// Debugging logs
+console.log("Server starting...");
+console.log("OpenRouter API Key:", process.env.OPENROUTER_API_KEY ? "Loaded" : "Not Found");
+
 // Chatbot endpoint that handles user messages
 app.post('/api/chat', async (req, res) => {
   const { message } = req.body;
 
   if (!message) {
     return res.status(400).json({ error: 'Message is required' });
+  }
+
+  const apiKey = process.env.OPENROUTER_API_KEY;
+  if (!apiKey) {
+    console.error("Missing OPENROUTER_API_KEY!");
+    return res.status(500).json({ error: "Server misconfiguration: Missing API key" });
   }
 
   try {
@@ -37,10 +47,10 @@ app.post('/api/chat', async (req, res) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
+          Authorization: `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
-          'HTTP-Referer': process.env.YOUR_SITE_URL || '', // Optional
-          'X-Title': process.env.YOUR_SITE_NAME || '', // Optional
+          'HTTP-Referer': process.env.YOUR_SITE_URL || '',
+          'X-Title': process.env.YOUR_SITE_NAME || '',
         },
       }
     );
@@ -56,6 +66,6 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://18.139.217.58:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
 });
