@@ -210,7 +210,7 @@ const Chatbot = () => {
     setIsBotTyping(true);
 
     try {
-      const response = await axios.post('http://10.0.135.75:5000/api/chat', { message: messageToSend });
+      const response = await axios.post('http://internal-internalalb-512605653.ap-southeast-1.elb.amazonaws.com:5000/api/chat', { message: messageToSend });
       setIsBotTyping(false);
       setChatHistory((prev) => [
         ...prev,
