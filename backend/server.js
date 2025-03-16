@@ -6,7 +6,7 @@ const cors = require('cors');
 const portfolioKnowledge = require('./portfolioKnowledge');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 const corsOptions = {
   origin: 'http://new-alb-141779744.ap-southeast-1.elb.amazonaws.com',  // ALB DNS
