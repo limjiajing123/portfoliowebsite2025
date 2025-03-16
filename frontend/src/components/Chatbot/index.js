@@ -210,7 +210,7 @@ const Chatbot = () => {
     setIsBotTyping(true);
 
     try {
-      const response = await axios.post('http://backend-discovery-name.portfolio-service-discovery-name:5000/api/chat', { message: messageToSend });
+      const response = await axios.post('http://10.0.135.75:5000/api/chat', { message: messageToSend });
       setIsBotTyping(false);
       setChatHistory((prev) => [
         ...prev,
