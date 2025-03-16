@@ -211,6 +211,7 @@ const Chatbot = () => {
 
     try {
       const response = await axios.post('http://internal-internalalb-512605653.ap-southeast-1.elb.amazonaws.com:5000/api/chat', { message: messageToSend });
+      console.log('Backend response:', response.data);
       setIsBotTyping(false);
       setChatHistory((prev) => [
         ...prev,
