@@ -47,7 +47,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.EC2_HOST }}
-          username: ec2-user # or ubuntu depending on AMI
+          username: ubuntu # or ubuntu depending on AMI
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             chmod +x ~/deploy.sh
